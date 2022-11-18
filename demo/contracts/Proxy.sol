@@ -15,7 +15,17 @@ contract Proxy {
 }
 
 contract Store {
-    address _implementation;
+    //address _implementation;
+    uint256 public count;
+
+    function add() external {
+        count += 1;
+    }
+}
+
+contract Store2 {
+    //address _implementation;
+    uint public name;
     uint256 public count;
 
     function add() external {
